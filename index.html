@@ -1,1 +1,48 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>障害物避けゲーム</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Web App Manifest -->
+    <link rel="manifest" href="manifest.json">
+
+    <!-- アイコン -->
+    <link rel="icon" href="icons/icon-192x192.png" sizes="192x192">
+    <link rel="icon" href="icons/icon-512x512.png" sizes="512x512">
+
+    <!-- テーマカラー -->
+    <meta name="theme-color" content="#ff6347">
+</head>
+<body>
+    <div class="game-container">
+        <div class="player" id="player"></div>
+        <div class="score" id="score">スコア: 0</div>
+    </div>
+
+    <div class="game-over">
+        <div id="final-score">最終スコア: 0</div>
+        <button id="restart-button">再スタート</button>
+    </div>
+
+    <script src="script.js"></script>
+
+    <!-- Service Workerの登録 -->
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/sw.js')
+                    .then((registration) => {
+                        console.log('Service Worker登録成功:', registration.scope);
+                    })
+                    .catch((error) => {
+                        console.log('Service Worker登録失敗:', error);
+                    });
+            });
+        }
+    </script>
+</body>
+</html>
 
