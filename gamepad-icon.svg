@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <!-- ゲームパッド本体 -->
+  <path d="M80 180 C80 120 120 80 180 80 H332 C392 80 432 120 432 180 V280 C432 360 392 432 256 432 C120 432 80 360 80 280 Z" fill="#303030"/>
+  
+  <!-- 左側ボタン -->
+  <circle cx="160" cy="220" r="15" fill="white"/>
+  <circle cx="220" cy="220" r="15" fill="white"/>
+  <circle cx="190" cy="190" r="15" fill="white"/>
+  <circle cx="190" cy="250" r="15" fill="white"/>
+  
+  <!-- 右側ボタン -->
+  <circle cx="310" cy="220" r="25" fill="#FF4444"/>
+  <circle cx="370" cy="220" r="25" fill="#44FF44"/>
+  
+  <!-- スタートボタン -->
+  <rect x="230" cy="160" width="52" height="20" rx="10" fill="#666666"/>
+  
+  <!-- 影とハイライト -->
+  <path d="M80 180 C80 120 120 80 180 80 H332 C392 80 432 120 432 180 V280 C432 360 392 432 256 432 C120 432 80 360 80 280 Z" 
+        fill="white" fill-opacity="0.1" transform="translate(0,-5)"/>
+</svg>
