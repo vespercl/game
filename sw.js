@@ -2,11 +2,11 @@ const CACHE_NAME = 'game-cache-v1';
 const urlsToCache = [
   '/',
   '/index.html',
-  '/style.css',
-  '/script.js',
+  '/styles.css',
+  '/app.js',
   '/manifest.json',
-  '/icons/icon-192x192.png',
-  '/icons/icon-512x512.png'
+  '/gamepad-icon.svg',
+  '/gamepad-icon.svg'
 ];
 
 // インストール時にキャッシュを作成
